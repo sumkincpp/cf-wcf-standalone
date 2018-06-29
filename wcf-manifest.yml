@@ -1,0 +1,13 @@
+---
+applications:
+- name: wcf2
+  memory: 1024M
+  stack: windows2016
+  buildpack: binary_buildpack
+  command: cmd /c .\WcfStandalone2.exe
+  path: WcfStandalone2\bin\Debug
+#  privileged: true
+#  env:
+#     ASPNETCORE_ENVIRONMENT: development
+#  services:
+#   - myConfigServer
